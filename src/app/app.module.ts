@@ -7,11 +7,13 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {NgZorroAntdModule, NZ_I18N, zh_CN} from 'ng-zorro-antd';
 import {registerLocaleData} from '@angular/common';
 import zh from '@angular/common/locales/zh';
+import { OriginMonacoComponent } from './origin-monaco/origin-monaco.component';
 registerLocaleData(zh);
 @NgModule({
   declarations: [
     AppComponent,
-    BasicComponent
+    BasicComponent,
+    OriginMonacoComponent
   ],
   imports: [
     BrowserModule,
