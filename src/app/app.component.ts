@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {NzConfigService} from 'ng-zorro-antd';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'static-monaco';
+  constructor(private nzConfigService: NzConfigService) {
+    this.nzConfigService.set('codeEditor', {useStaticLoading: true});
+  }
 }
