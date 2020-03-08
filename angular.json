@@ -35,7 +35,8 @@
             "styles": [
               "src/styles.css",
               "node_modules/ng-zorro-antd/ng-zorro-antd.min.css",
-              "node_modules/ng-zorro-antd/code-editor/style/entry.less"
+              "node_modules/ng-zorro-antd/code-editor/style/entry.less",
+              "./node_modules/monaco-editor/min/vs/editor/editor.main.css"
             ],
             "scripts": [],
             "customWebpackConfig": {
@@ -61,8 +62,8 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "2mb",
-                  "maximumError": "5mb"
+                  "maximumWarning": "20mb",
+                  "maximumError": "50mb"
                 },
                 {
                   "type": "anyComponentStyle",
